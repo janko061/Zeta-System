@@ -1,4 +1,4 @@
-#+TITLE: Randoms sistem
+#+TITLE: Zeta System
 #+AUTHOR: Jan Fruhwirth
 
 
