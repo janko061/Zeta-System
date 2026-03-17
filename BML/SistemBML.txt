@@ -1,0 +1,13 @@
+#+TITLE: Randoms sistem
+#+AUTHOR: Jan Fruhwirth
+
+
+#INCLUDE Modules\1NT.txt
+
+#INCLUDE Modules\2NT.txt
+
+#INCLUDE Modules\2C.txt
+
+#INCLUDE Modules\2-way.txt
+
+#INCLUDE Modules\Other.txt

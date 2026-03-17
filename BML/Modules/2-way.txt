@@ -1,0 +1,28 @@
+1m-1M-1N;
+2C = Inv+
+		2D = Forced
+2D = GF+
+
+
+1m-1H-1N;
+2S = 44M Inv+
+
+
+1m-1H-1N-2C-2D;
+2S = 5!h 4!s Inv
+
+
+1m-1M-1N-2D-2M;
+2oM = 44M GF
+
+
+1C-1HS-1N;
+3X = 5M 5X Inv
+
+
+1m-1S-1N;
+2N = Transfer
+		3C = Forced
+				3D = 5!s 5!d GF
+				3H = 5!s 5!h GF
+				3S = 5!s 5!c GF

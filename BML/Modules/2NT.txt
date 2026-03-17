@@ -1,0 +1,71 @@
+2N = 20-21 Balanced
+		3C = Stayman
+		3DH = Jackoby
+		3S = 44m Slam try
+		4CD = Slam try 6+!h/!s
+		4HS = Slam try 6+!c/!d
+
+
+2N-3C;
+3D = No 4M
+		3H = 4!h 5!s GF
+		3S = 4!s 5!h GF
+		4m = Natural slam try
+		4H = 55M Stop
+		4N = Quantitative
+3H = 4!h
+		3S = Slam try !h
+		4m = Natural slam try
+		4N = Quantitative
+3S = 4!s
+		4m = Natural slam try
+		4H = Slam try !s
+		4N = Quantitative
+
+
+2N-3D;
+3H = 3+!h
+		3S = Slam try no shortness
+		3N = Single other major
+		4CD = Single or void !c/!d
+3S = 5!s 2!h
+		4C = Natural GF
+		4D = Retransfer !h
+		4H = !s GF
+		4S = !d GF
+3N = 2!h
+		4C = Natural
+		4D = Retransfer !h
+		4S = !d GF
+
+
+2N-3H;
+3S = 3+!s
+		3N = No shortness
+		4CDH = Shortness
+		4N = Quantitative
+3N = 2!s
+		4m = Natural slam try
+		4H = Retransfer !s
+		4N = Quantitative
+
+
+2N
+		3S = 44+m Slam try
+				3N = Negative
+				4m = 4+m Positive
+
+
+2N
+		4CD = Slam try 6+!h/!s
+				4DH = MIN
+				4HS = MAX
+
+
+2N
+		4H = 6+!c Slam try
+				4S = Blackwood
+				4N = Stop
+		4S = 6+!d Slam try
+				4N = Stop
+				5C = Blackwood

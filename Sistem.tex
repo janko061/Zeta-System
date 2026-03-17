@@ -1,0 +1,938 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newcent}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage{dirtree}
+\usepackage[pdftex, pdfborder={0 0 0}]{hyperref}
+\frenchspacing
+
+\usepackage{txfonts} % For \varheartsuit and \vardiamondsuit
+\usepackage[usenames,dvipsnames]{color} % dvipsnames necessary to made PDFLaTeX work.
+\usepackage{enumerate}
+\usepackage{listliketab}
+\usepackage{latexsym} % \Box
+\usepackage{pbox} % \Box
+\usepackage{parskip} % line between paragraphs
+
+% suits
+
+%%% Colors
+
+\newcommand{\BC}{\textcolor{OliveGreen}{$\clubsuit$}}
+\newcommand{\BD}{\textcolor{RedOrange}{$\vardiamondsuit$}}
+\newcommand{\BH}{\textcolor{Red}{$\varheartsuit${}}}
+\newcommand{\BS}{\textcolor{Blue}{$\spadesuit${}}}
+
+%suits for pdf-friendly titles
+\newcommand{\pdfc}{\texorpdfstring{\BC{}}{C}}
+\newcommand{\pdfd}{\texorpdfstring{\BD{}}{D}}
+\newcommand{\pdfh}{\texorpdfstring{\BH{}}{H}}
+\newcommand{\pdfs}{\texorpdfstring{\BS{}}{S}}
+
+\newenvironment{bidtable}
+{\begin{tabbing}
+
+xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx\=\kill}
+{\end{tabbing} }%
+
+\newenvironment{bidding}%
+{\begin{tabbing}
+xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx \kill
+}{\end{tabbing} }%end bidding
+
+
+% writing hands
+\newcommand{\cards}[1]{\textsf{#1}}
+\newcommand{\spades}[1]{\BS\cards{#1}}
+\newcommand{\hearts}[1]{\BH\cards{#1}}
+\newcommand{\diamonds}[1]{\BD\cards{#1}}
+\newcommand{\clubs}[1]{\BC\cards{#1}}
+\newcommand{\void}{--}
+\newcommand{\hand}[4]{\spades{#1}\ \hearts{#2}\ \diamonds{#3} \clubs{#4}}
+\newcommand{\vhand}[4]{\spades{#1}\\\hearts{#2}\\\diamonds{#3}\\\clubs{#4}}
+
+% The \Box should always appear the same distance from the left margin
+\newcommand\onesuit[4]%
+{%
+  \begin{center}%
+    \begin{tabular}{>{\hfill}p{3cm}cp{3cm}}
+                & \cards{#2} \\%
+      \cards{#1}& $\Box$    & \cards{#3} \\%
+                & \cards{#4} %
+    \end{tabular}
+  \end{center}%
+}
+
+% A special command if the south hand is not shown to avoid whitespace
+\newcommand\onesuitenw[3]%
+{%
+  \begin{center}%
+    \begin{tabular}{>{\hfill}p{3cm}cp{3cm}}%
+                & \cards{#2} \\%
+      \cards{#1}& $\Box$    & \cards{#3}%
+    \end{tabular}%
+  \end{center}%
+}
+
+\newcommand\dealdiagram[5]%
+{%
+  \begin{center}%
+    \begin{tabular}{>{\hfill}p{3cm}cp{3cm}}
+      \pbox{20cm}{\small #5}& \pbox{20cm}{#2} \\%
+      \pbox{20cm}{#1}& $\Box$    & \pbox{20cm}{#3} \\%
+                & \pbox{20cm}{#4} %
+    \end{tabular}
+  \end{center}%
+}
+
+\newcommand\dealdiagramenw[4]%
+{%
+  \begin{center}%
+    \begin{tabular}{>{\hfill}p{3cm}cp{3cm}}
+      \pbox{20cm}{\small #4}& \pbox{20cm}{#2} \\%
+      \pbox{20cm}{#1}& $\Box$    & \pbox{20cm}{#3} \\%
+    \end{tabular}
+  \end{center}%
+}
+
+\newcommand\dealdiagramew[2]%
+{%
+  \begin{center}%
+    \begin{tabular}{>{\hfill}p{3cm}cp{3cm}}
+      \pbox{20cm}{#1}& $\Box$    & \pbox{20cm}{#2} \\%
+    \end{tabular}
+  \end{center}%
+}
+
+\title{Randoms sistem}
+\author{No author defined}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\
+\dirtree{%%
+ .1 1NT.....\begin{minipage}[t]{0.8\textwidth}
+15-17 balanced
+\end{minipage}. 
+ .2 2\BC......\begin{minipage}[t]{0.8\textwidth}
+Stayman
+\end{minipage}. 
+ .2 2\BD\BH.....\begin{minipage}[t]{0.8\textwidth}
+Jackoby
+\end{minipage}. 
+ .2 2\BS......\begin{minipage}[t]{0.8\textwidth}
+Threeway
+\end{minipage}. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+\BC 
+\end{minipage}. 
+ .2 3\BC......\begin{minipage}[t]{0.8\textwidth}
+\BD 
+\end{minipage}. 
+ .2 3\BD......\begin{minipage}[t]{0.8\textwidth}
+55M inv+
+\end{minipage}. 
+ .2 3\BH......\begin{minipage}[t]{0.8\textwidth}
+3\BH\ 1\BS\ 54m
+\end{minipage}. 
+ .2 3\BS......\begin{minipage}[t]{0.8\textwidth}
+3\BS\ 1\BH\ 54m
+\end{minipage}. 
+ .2 3NT.....\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .2 4\BC......\begin{minipage}[t]{0.8\textwidth}
+Deep texas \BH 
+\end{minipage}. 
+ .2 4\BD......\begin{minipage}[t]{0.8\textwidth}
+Deep texas \BS 
+\end{minipage}. 
+ .2 4\BS......\begin{minipage}[t]{0.8\textwidth}
+44m Quantitative
+\end{minipage}. 
+ .2 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Qunatitative
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-2\BC. 
+ .2 2\BD......\begin{minipage}[t]{0.8\textwidth}
+No 4 card major
+\end{minipage}. 
+ .3 2\BH......\begin{minipage}[t]{0.8\textwidth}
+5\BH\ 4\BS\ To play
+\end{minipage}. 
+ .3 2\BS......\begin{minipage}[t]{0.8\textwidth}
+5\BS\ 4\BH\ To play
+\end{minipage}. 
+ .3 2NT.....\begin{minipage}[t]{0.8\textwidth}
+Inv
+\end{minipage}. 
+ .3 3\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+5\BC /\BD\ 4M GF
+\end{minipage}. 
+ .4 3\BD\BH.....\begin{minipage}[t]{0.8\textwidth}
+Slam try
+\end{minipage}. 
+ .3 3\BH\BS.....\begin{minipage}[t]{0.8\textwidth}
+Smolen (4\BH\ 5\BS /4\BS\ 5\BH ) GF+
+\end{minipage}. 
+ .2 2\BH......\begin{minipage}[t]{0.8\textwidth}
+4\BH 
+\end{minipage}. 
+ .3 2\BS......\begin{minipage}[t]{0.8\textwidth}
+Slam try no shortness
+\end{minipage}. 
+ .3 2NT.....\begin{minipage}[t]{0.8\textwidth}
+8-9 4\BS 
+\end{minipage}. 
+ .3 3\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+5\BC /\BD\ 4\BS\ GF
+\end{minipage}. 
+ .3 3\BH......\begin{minipage}[t]{0.8\textwidth}
+Inv
+\end{minipage}. 
+ .3 3\BS......\begin{minipage}[t]{0.8\textwidth}
+Splinter
+\end{minipage}. 
+ .3 3NT.....\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .3 4\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+Splinter
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Kvantitativ
+\end{minipage}. 
+ .2 2\BS......\begin{minipage}[t]{0.8\textwidth}
+4\BS 
+\end{minipage}. 
+ .3 2NT.....\begin{minipage}[t]{0.8\textwidth}
+8-9 4\BH 
+\end{minipage}. 
+ .3 3\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+5\BC /\BD\ 4\BH\ GF
+\end{minipage}. 
+ .3 3\BH......\begin{minipage}[t]{0.8\textwidth}
+Slam try no shortness
+\end{minipage}. 
+ .3 3\BS......\begin{minipage}[t]{0.8\textwidth}
+Inv
+\end{minipage}. 
+ .3 4\BC\BD\BH....\begin{minipage}[t]{0.8\textwidth}
+Splinter
+\end{minipage}. 
+ .3 3NT.....\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Quantitative
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-2\BD. 
+ .2 2\BH......\begin{minipage}[t]{0.8\textwidth}
+Accept
+\end{minipage}. 
+ .3 2\BS......\begin{minipage}[t]{0.8\textwidth}
+Slam try no shortness
+\end{minipage}. 
+ .3 2NT.....\begin{minipage}[t]{0.8\textwidth}
+Inv
+\end{minipage}. 
+ .3 3\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+5\BH\ 4\BC /\BD\ GF
+\end{minipage}. 
+ .3 3\BH......\begin{minipage}[t]{0.8\textwidth}
+Inv 6\BH 
+\end{minipage}. 
+ .3 3\BS......\begin{minipage}[t]{0.8\textwidth}
+Splinter
+\end{minipage}. 
+ .3 4\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+Splinter
+\end{minipage}. 
+ .3 4\BH......\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+5\BH\ Quantitative
+\end{minipage}. 
+ .2 2\BS......\begin{minipage}[t]{0.8\textwidth}
+4\BH\ dubleton \BS 
+\end{minipage}. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+4\BH\ MAX 4333
+\end{minipage}. 
+ .2 3\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+4\BH\ dubleton \BC /\BD 
+\end{minipage}. 
+ .2 3\BH......\begin{minipage}[t]{0.8\textwidth}
+4H MIN
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-2\BH. 
+ .2 2\BS......\begin{minipage}[t]{0.8\textwidth}
+Accept
+\end{minipage}. 
+ .3 2NT.....\begin{minipage}[t]{0.8\textwidth}
+Inv
+\end{minipage}. 
+ .3 3\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+5\BS\ 4\BC /\BD\ GF
+\end{minipage}. 
+ .3 3\BH......\begin{minipage}[t]{0.8\textwidth}
+Slam try no shortness
+\end{minipage}. 
+ .3 3\BS......\begin{minipage}[t]{0.8\textwidth}
+Inv 6\BS 
+\end{minipage}. 
+ .3 4\BC\BD\BH....\begin{minipage}[t]{0.8\textwidth}
+Splinter
+\end{minipage}. 
+ .3 4\BS......\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+5\BS\ Quantitative
+\end{minipage}. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+4\BS\ MAX 3433
+\end{minipage}. 
+ .2 3\BC\BD\BH....\begin{minipage}[t]{0.8\textwidth}
+4\BH\ dubleton \BC /\BD 
+\end{minipage}. 
+ .2 3\BS......\begin{minipage}[t]{0.8\textwidth}
+4\BS\ MIN
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-2\BS..\begin{minipage}[t]{0.8\textwidth}
+Three way:\\
+1{.} 8-9 Bal\\
+2{.} 3\BC /\BD\ Stop\\
+3{.} 55m GF
+\end{minipage}. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+MIN
+\end{minipage}. 
+ .2 3\BC......\begin{minipage}[t]{0.8\textwidth}
+MAX
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-2NT. 
+ .2 3\BC......\begin{minipage}[t]{0.8\textwidth}
+Accepting transfer
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-3\BC. 
+ .2 3\BD......\begin{minipage}[t]{0.8\textwidth}
+Accepting transfer
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-3\BD. 
+ .2 3\BH......\begin{minipage}[t]{0.8\textwidth}
+MIN
+\end{minipage}. 
+ .2 3\BS......\begin{minipage}[t]{0.8\textwidth}
+MIN
+\end{minipage}. 
+ .2 3NT.....\begin{minipage}[t]{0.8\textwidth}
+To play 22M
+\end{minipage}. 
+ .2 4\BC......\begin{minipage}[t]{0.8\textwidth}
+\BH\ MAX
+\end{minipage}. 
+ .3 4\BD......\begin{minipage}[t]{0.8\textwidth}
+Retranfer
+\end{minipage}. 
+ .2 4\BD......\begin{minipage}[t]{0.8\textwidth}
+\BS\ MAX
+\end{minipage}. 
+ .3 4\BH......\begin{minipage}[t]{0.8\textwidth}
+Retransfer
+\end{minipage}. 
+ .2 4\BH\BS.....\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT. 
+ .2 3\BH......\begin{minipage}[t]{0.8\textwidth}
+1\BS\ 3\BH\ 54m GF
+\end{minipage}. 
+ .2 3\BS......\begin{minipage}[t]{0.8\textwidth}
+3\BS\ 1\BH\ 54m GF
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT. 
+ .2 4\BC......\begin{minipage}[t]{0.8\textwidth}
+6\BH\ GF
+\end{minipage}. 
+ .3 4\BD......\begin{minipage}[t]{0.8\textwidth}
+MAX \BH 
+\end{minipage}. 
+ .3 4\BH......\begin{minipage}[t]{0.8\textwidth}
+MIN \BH 
+\end{minipage}. 
+ .2 4\BD......\begin{minipage}[t]{0.8\textwidth}
+6\BS\ GF
+\end{minipage}. 
+ .3 4\BH......\begin{minipage}[t]{0.8\textwidth}
+MAX \BS 
+\end{minipage}. 
+ .3 4\BS......\begin{minipage}[t]{0.8\textwidth}
+MIN \BS 
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT. 
+ .2 4\BS......\begin{minipage}[t]{0.8\textwidth}
+44m Qunatitative
+\end{minipage}. 
+ .3 5\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .3 5NT.....\begin{minipage}[t]{0.8\textwidth}
+Pick a slam
+\end{minipage}. 
+ .3 6\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-(D). 
+ .2 Rdbl....\begin{minipage}[t]{0.8\textwidth}
+\BC 
+\end{minipage}. 
+ .2 2\BC......\begin{minipage}[t]{0.8\textwidth}
+\BD 
+\end{minipage}. 
+ .2 2\BD......\begin{minipage}[t]{0.8\textwidth}
+\BH 
+\end{minipage}. 
+ .2 2\BH......\begin{minipage}[t]{0.8\textwidth}
+\BS 
+\end{minipage}. 
+ .2 Pass....\begin{minipage}[t]{0.8\textwidth}
+For reduble
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-(2\BC). 
+ .2 2\BD......\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .2 2\BH......\begin{minipage}[t]{0.8\textwidth}
+1\BS\ 3\BH\ 54m GF
+\end{minipage}. 
+ .2 2\BS......\begin{minipage}[t]{0.8\textwidth}
+3\BS\ 1\BH\ 54m GF
+\end{minipage}. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+Transfer \BC 
+\end{minipage}. 
+ .2 3\BC......\begin{minipage}[t]{0.8\textwidth}
+Transfer \BD 
+\end{minipage}. 
+ .2 3\BD......\begin{minipage}[t]{0.8\textwidth}
+Transfer \BH 
+\end{minipage}. 
+ .2 3\BH......\begin{minipage}[t]{0.8\textwidth}
+Transfer \BS 
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-(2\BD). 
+ .2 Dbl.....\begin{minipage}[t]{0.8\textwidth}
+6+ HCP
+\end{minipage}. 
+ .2 2M......\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+Transfer \BC 
+\end{minipage}. 
+ .2 2\BC......\begin{minipage}[t]{0.8\textwidth}
+Transfer \BD 
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1NT-(3\BC). 
+ .2 3\BD......\begin{minipage}[t]{0.8\textwidth}
+F1
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 (1NT). 
+ .2 2\BC......\begin{minipage}[t]{0.8\textwidth}
+44+M
+\end{minipage}. 
+ .3 (P). 
+ .4 2\BD......\begin{minipage}[t]{0.8\textwidth}
+Relay
+\end{minipage}. 
+ .5 2\BH......\begin{minipage}[t]{0.8\textwidth}
+Equal
+\end{minipage}. 
+ .5 2\BS......\begin{minipage}[t]{0.8\textwidth}
+5\BS\ 4\BH 
+\end{minipage}. 
+ .5 2NT.....\begin{minipage}[t]{0.8\textwidth}
+55M
+\end{minipage}. 
+ .4 2M......\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .4 2NT.....\begin{minipage}[t]{0.8\textwidth}
+GF
+\end{minipage}. 
+ .5 3\BC......\begin{minipage}[t]{0.8\textwidth}
+Equal
+\end{minipage}. 
+ .6 3\BD......\begin{minipage}[t]{0.8\textwidth}
+Asks better major
+\end{minipage}. 
+ .5 3M......\begin{minipage}[t]{0.8\textwidth}
+To play
+\end{minipage}. 
+ .5 3\BD......\begin{minipage}[t]{0.8\textwidth}
+44M
+\end{minipage}. 
+ .5 3\BH......\begin{minipage}[t]{0.8\textwidth}
+4\BH\ 5\BS 
+\end{minipage}. 
+ .5 3\BS......\begin{minipage}[t]{0.8\textwidth}
+4\BS\ 5\BH 
+\end{minipage}. 
+ .5 3NT.....\begin{minipage}[t]{0.8\textwidth}
+55M
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 (1NT). 
+ .2 2\BD......\begin{minipage}[t]{0.8\textwidth}
+6M
+\end{minipage}. 
+ .3 2M......\begin{minipage}[t]{0.8\textwidth}
+Pass correct
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2NT.....\begin{minipage}[t]{0.8\textwidth}
+20-21 Balanced
+\end{minipage}. 
+ .2 3\BC......\begin{minipage}[t]{0.8\textwidth}
+Stayman
+\end{minipage}. 
+ .2 3\BD\BH.....\begin{minipage}[t]{0.8\textwidth}
+Jackoby
+\end{minipage}. 
+ .2 3\BS......\begin{minipage}[t]{0.8\textwidth}
+44m Slam try
+\end{minipage}. 
+ .2 4\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+Slam try 6+\BH /\BS 
+\end{minipage}. 
+ .2 4\BH\BS.....\begin{minipage}[t]{0.8\textwidth}
+Slam try 6+\BC /\BD 
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2NT-3\BC. 
+ .2 3\BD......\begin{minipage}[t]{0.8\textwidth}
+No 4M
+\end{minipage}. 
+ .3 3\BH......\begin{minipage}[t]{0.8\textwidth}
+4\BH\ 5\BS\ GF
+\end{minipage}. 
+ .3 3\BS......\begin{minipage}[t]{0.8\textwidth}
+4\BS\ 5\BH\ GF
+\end{minipage}. 
+ .3 4m......\begin{minipage}[t]{0.8\textwidth}
+Natural slam try
+\end{minipage}. 
+ .3 4\BH......\begin{minipage}[t]{0.8\textwidth}
+55M Stop
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Quantitative
+\end{minipage}. 
+ .2 3\BH......\begin{minipage}[t]{0.8\textwidth}
+4\BH 
+\end{minipage}. 
+ .3 3\BS......\begin{minipage}[t]{0.8\textwidth}
+Slam try \BH 
+\end{minipage}. 
+ .3 4m......\begin{minipage}[t]{0.8\textwidth}
+Natural slam try
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Quantitative
+\end{minipage}. 
+ .2 3\BS......\begin{minipage}[t]{0.8\textwidth}
+4\BS 
+\end{minipage}. 
+ .3 4m......\begin{minipage}[t]{0.8\textwidth}
+Natural slam try
+\end{minipage}. 
+ .3 4\BH......\begin{minipage}[t]{0.8\textwidth}
+Slam try \BS 
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Quantitative
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2NT-3\BD. 
+ .2 3\BH......\begin{minipage}[t]{0.8\textwidth}
+3+\BH 
+\end{minipage}. 
+ .3 3\BS......\begin{minipage}[t]{0.8\textwidth}
+Slam try no shortness
+\end{minipage}. 
+ .3 3NT.....\begin{minipage}[t]{0.8\textwidth}
+Single other major
+\end{minipage}. 
+ .3 4\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+Single or void \BC /\BD 
+\end{minipage}. 
+ .2 3\BS......\begin{minipage}[t]{0.8\textwidth}
+5\BS\ 2\BH 
+\end{minipage}. 
+ .3 4\BC......\begin{minipage}[t]{0.8\textwidth}
+Natural GF
+\end{minipage}. 
+ .3 4\BD......\begin{minipage}[t]{0.8\textwidth}
+Retransfer \BH 
+\end{minipage}. 
+ .3 4\BH......\begin{minipage}[t]{0.8\textwidth}
+\BS\ GF
+\end{minipage}. 
+ .3 4\BS......\begin{minipage}[t]{0.8\textwidth}
+\BD\ GF
+\end{minipage}. 
+ .2 3NT.....\begin{minipage}[t]{0.8\textwidth}
+2\BH 
+\end{minipage}. 
+ .3 4\BC......\begin{minipage}[t]{0.8\textwidth}
+Natural
+\end{minipage}. 
+ .3 4\BD......\begin{minipage}[t]{0.8\textwidth}
+Retransfer \BH 
+\end{minipage}. 
+ .3 4\BS......\begin{minipage}[t]{0.8\textwidth}
+\BD\ GF
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2NT-3\BH. 
+ .2 3\BS......\begin{minipage}[t]{0.8\textwidth}
+3+\BS 
+\end{minipage}. 
+ .3 3NT.....\begin{minipage}[t]{0.8\textwidth}
+No shortness
+\end{minipage}. 
+ .3 4\BC\BD\BH....\begin{minipage}[t]{0.8\textwidth}
+Shortness
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Quantitative
+\end{minipage}. 
+ .2 3NT.....\begin{minipage}[t]{0.8\textwidth}
+2\BS 
+\end{minipage}. 
+ .3 4m......\begin{minipage}[t]{0.8\textwidth}
+Natural slam try
+\end{minipage}. 
+ .3 4\BH......\begin{minipage}[t]{0.8\textwidth}
+Retransfer \BS 
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Quantitative
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2NT. 
+ .2 3\BS......\begin{minipage}[t]{0.8\textwidth}
+44+m Slam try
+\end{minipage}. 
+ .3 3NT.....\begin{minipage}[t]{0.8\textwidth}
+Negative
+\end{minipage}. 
+ .3 4m......\begin{minipage}[t]{0.8\textwidth}
+4+m Positive
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2NT. 
+ .2 4\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+Slam try 6+\BH /\BS 
+\end{minipage}. 
+ .3 4\BD\BH.....\begin{minipage}[t]{0.8\textwidth}
+MIN
+\end{minipage}. 
+ .3 4\BH\BS.....\begin{minipage}[t]{0.8\textwidth}
+MAX
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2NT. 
+ .2 4\BH......\begin{minipage}[t]{0.8\textwidth}
+6+\BC\ Slam try
+\end{minipage}. 
+ .3 4\BS......\begin{minipage}[t]{0.8\textwidth}
+Blackwood
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Stop
+\end{minipage}. 
+ .2 4\BS......\begin{minipage}[t]{0.8\textwidth}
+6+\BD\ Slam try
+\end{minipage}. 
+ .3 4NT.....\begin{minipage}[t]{0.8\textwidth}
+Stop
+\end{minipage}. 
+ .3 5\BC......\begin{minipage}[t]{0.8\textwidth}
+Blackwood
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2\BC......\begin{minipage}[t]{0.8\textwidth}
+22+ or 4 losers 19+
+\end{minipage}. 
+ .2 2\BD......\begin{minipage}[t]{0.8\textwidth}
+Waiting
+\end{minipage}. 
+ .2 2\BH\BS.....\begin{minipage}[t]{0.8\textwidth}
+KQTxx or AJTxx
+\end{minipage}. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+55m
+\end{minipage}. 
+ .2 3\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+KQTxx or AJTxx
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2\BC-2\BD. 
+ .2 2\BH......\begin{minipage}[t]{0.8\textwidth}
+Kokish(\BH\ or 24+ balanced)
+\end{minipage}. 
+ .3 2\BS......\begin{minipage}[t]{0.8\textwidth}
+Forced
+\end{minipage}. 
+ .4 2NT.....\begin{minipage}[t]{0.8\textwidth}
+24+ balanced
+\end{minipage}. 
+ .4 3\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+5\BH\ 4\BC /\BD\ GF
+\end{minipage}. 
+ .4 3\BH......\begin{minipage}[t]{0.8\textwidth}
+6\BH\ GF
+\end{minipage}. 
+ .4 3\BS......\begin{minipage}[t]{0.8\textwidth}
+5\BH\ 4\BS\ GF
+\end{minipage}. 
+ .2 2\BS......\begin{minipage}[t]{0.8\textwidth}
+5+\BS\ GF
+\end{minipage}. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+22-23 balanced (same development as 2NT)
+\end{minipage}. 
+ .2 3\BC\BD.....\begin{minipage}[t]{0.8\textwidth}
+Natural 6\BC /\BD 
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 2\BC-(2X). 
+ .2 Pass....\begin{minipage}[t]{0.8\textwidth}
+Positive 4+ HCP
+\end{minipage}. 
+ .2 Dbl.....\begin{minipage}[t]{0.8\textwidth}
+Negative
+\end{minipage}. 
+ .2 2X......\begin{minipage}[t]{0.8\textwidth}
+5x
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1m-1M-1NT. 
+ .2 2\BC......\begin{minipage}[t]{0.8\textwidth}
+Inv+
+\end{minipage}. 
+ .3 2\BD......\begin{minipage}[t]{0.8\textwidth}
+Forced
+\end{minipage}. 
+ .2 2\BD......\begin{minipage}[t]{0.8\textwidth}
+GF+
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1m-1\BH-1NT. 
+ .2 2\BS......\begin{minipage}[t]{0.8\textwidth}
+44M Inv+
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1m-1\BH-1NT-2\BC-2\BD. 
+ .2 2\BS......\begin{minipage}[t]{0.8\textwidth}
+5\BH\ 4\BS\ Inv
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1m-1M-1NT-2\BD-2M. 
+ .2 2oM.....\begin{minipage}[t]{0.8\textwidth}
+44M GF
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1\BC-1\BH\BS-1NT. 
+ .2 3X......\begin{minipage}[t]{0.8\textwidth}
+5M 5X Inv
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1m-1\BS-1NT. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+Transfer
+\end{minipage}. 
+ .3 3\BC......\begin{minipage}[t]{0.8\textwidth}
+Forced
+\end{minipage}. 
+ .4 3\BD......\begin{minipage}[t]{0.8\textwidth}
+5\BS\ 5\BD\ GF
+\end{minipage}. 
+ .4 3\BH......\begin{minipage}[t]{0.8\textwidth}
+5\BS\ 5\BH\ GF
+\end{minipage}. 
+ .4 3\BS......\begin{minipage}[t]{0.8\textwidth}
+5\BS\ 5\BC\ GF
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1\BC. 
+ .2 2X......\begin{minipage}[t]{0.8\textwidth}
+6x 8-10;
+\end{minipage}. 
+ .2 2\BC......\begin{minipage}[t]{0.8\textwidth}
+12+ GF (no 4M)
+\end{minipage}. 
+ .2 3X......\begin{minipage}[t]{0.8\textwidth}
+7x 3-5
+\end{minipage}. 
+ .2 3\BC......\begin{minipage}[t]{0.8\textwidth}
+7-10 Semibalanced
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1\BC-2\BC. 
+ .2 2\BD......\begin{minipage}[t]{0.8\textwidth}
+12-14 Balanced
+\end{minipage}. 
+ .3 2NT.....\begin{minipage}[t]{0.8\textwidth}
+Inv
+\end{minipage}. 
+ .2 2\BH\BS.....\begin{minipage}[t]{0.8\textwidth}
+GF \BH /\BS\ values
+\end{minipage}. 
+ .2 2NT.....\begin{minipage}[t]{0.8\textwidth}
+18-19 Balanced
+\end{minipage}. 
+ .2 3\BC......\begin{minipage}[t]{0.8\textwidth}
+Weak
+\end{minipage}. 
+ .2 3\BD\BH\BS....\begin{minipage}[t]{0.8\textwidth}
+Splinter
+\end{minipage}. 
+}
+\bigbreak
+\
+\dirtree{%%
+ .1 1\BD-2\BD. 
+ .2 2\BH......\begin{minipage}[t]{0.8\textwidth}
+12-14 Balanced
+\end{minipage}. 
+}
+\bigbreak
+\end{document}

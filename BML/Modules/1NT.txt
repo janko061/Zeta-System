@@ -1,0 +1,172 @@
+1N = 15-17 balanced
+		2C = Stayman
+		2DH = Jackoby
+		2S = Threeway
+		2N = !c
+		3C = !d
+		3D = 55M inv+
+		3H = 3!h 1!s 54m
+		3S = 3!s 1!h 54m
+		3N = To play
+		4C = Deep texas !h
+		4D = Deep texas !s
+		4S = 44m Quantitative
+		4N = Qunatitative
+
+
+1N-2C;
+2D = No 4 card major
+		2H = 5!h 4!s To play
+		2S = 5!s 4!h To play
+		2N = Inv
+		3CD = 5!c/!d 4M GF
+				3DH = Slam try
+		3HS = Smolen (4!h 5!s/4!s 5!h) GF+
+2H = 4!h
+		2S = Slam try no shortness
+		2N = 8-9 4!s
+		3CD = 5!c/!d 4!s GF
+		3H = Inv
+		3S = Splinter
+		3N = To play
+		4CD = Splinter
+		4N = Kvantitativ
+2S = 4!s
+		2N = 8-9 4!h
+		3CD = 5!c/!d 4!h GF
+		3H = Slam try no shortness
+		3S = Inv
+		4CDH = Splinter
+		3N = To play
+		4N = Quantitative
+
+
+1N-2D;
+2H = Accept
+		2S = Slam try no shortness
+		2N = Inv
+		3CD = 5!h 4!c/!d GF
+		3H = Inv 6!h
+		3S = Splinter
+		4CD = Splinter
+		4H = To play
+		4N = 5!h Quantitative
+2S = 4!h dubleton !s
+2N = 4!h MAX 4333
+3CD = 4!h dubleton !c/!d
+3H = 4H MIN
+
+
+1N-2H;
+2S = Accept
+		2N = Inv
+		3CD = 5!s 4!c/!d GF
+		3H = Slam try no shortness
+		3S = Inv 6!s
+		4CDH = Splinter
+		4S = To play
+		4N = 5!s Quantitative
+2N = 4!s MAX 3433
+3CDH = 4!h dubleton !c/!d
+3S = 4!s MIN
+
+
+1N-2S = Three way:
+        1. 8-9 Bal
+        2. 3!c/!d Stop
+        3. 55m GF
+		2N = MIN
+		3C = MAX
+
+
+1N-2N;
+3C = Accepting transfer
+
+
+1N-3C;
+3D = Accepting transfer
+
+
+1N-3D;
+3H = MIN
+3S = MIN
+3N = To play 22M
+4C = !h MAX 
+		4D = Retranfer
+4D = !s MAX
+		4H = Retransfer
+4HS = To play
+
+
+1N
+		3H = 1!s 3!h 54m GF
+		3S = 3!s 1!h 54m GF
+
+1N
+		4C = 6!h GF
+				4D = MAX !h
+				4H = MIN !h
+		4D = 6!s GF
+				4H = MAX !s
+				4S = MIN !s
+
+
+1N
+		4S = 44m Qunatitative
+				5CD = To play
+				4N = To play
+				5N = Pick a slam
+				6CD = To play
+
+
+1N-(D);
+R = !c
+2C = !d
+2D = !h
+2H = !s
+P = For reduble
+
+
+1N-(2C);
+2D = To play
+2H = 1!s 3!h 54m GF
+2S = 3!s 1!h 54m GF
+2N = Transfer !c
+3C = Transfer !d
+3D = Transfer !h
+3H = Transfer !s
+
+
+1N-(2D);
+D = 6+ HCP
+2M = To play
+2N = Transfer !c
+2C = Transfer !d
+
+
+1N-(3C);
+3D = F1
+
+
+(1N);
+2C = 44+M
+		(P)
+				2D = Relay
+						2H = Equal
+						2S = 5!s 4!h
+						2N = 55M
+				2M = To play
+				2N = GF
+						3C = Equal
+								3D = Asks better major
+						3M = To play
+						3D = 44M
+						3H = 4!h 5!s
+						3S = 4!s 5!h
+						3N = 55M
+
+
+(1N);
+2D = 6M
+		2M = Pass correct
+
