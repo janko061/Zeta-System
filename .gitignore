@@ -1,0 +1,18 @@
+# Ignore compilation folder
+#Compilatio/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Optional: editor/temp files
+*.tmp
+*.bak
+*.swp
