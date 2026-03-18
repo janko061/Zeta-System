@@ -1,0 +1,4281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Zeta System
+  </title>
+  <style type="text/css">
+   div.start {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+}
+    
+div.bidtable {
+    width:700px;
+    padding-bottom: 20px;
+}    
+
+div.bidtable ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.bidtable li ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 60px;
+}
+
+div.tree {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+div.tree ul {
+    list-style-type: none;
+    /* vline.png */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAKAQMAAABPHKYJAAAAA1BMVEWIiIhYZW6zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1ggGExMZBky19AAAAAtJREFUCNdjYMAEAAAUAAHlhrBKAAAAAElFTkSuQmCC);
+    background-size: 2px;
+    background-repeat: repeat-y;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+div.tree li.node {
+    margin: 0;
+    padding: 0 12px;
+    line-height: 20px;
+    /* node.png */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAUAQMAAACK1e4oAAAABlBMVEUAAwCIiIgd2JB2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YIBhQIJYVaFGwAAAARSURBVAjXY2hgQIf/GTDFGgDSkwqATqpCHAAAAABJRU5ErkJggg==);
+    background-size: 12px;
+    background-repeat: no-repeat;
+}
+
+div.tree td.node {
+    vertical-align: top;
+    width: 60px;
+}
+
+div.tree li.last {
+    /* lastnode.png */
+    background-color: #fff;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAUAQMAAACK1e4oAAAABlBMVEUAAwCIiIgd2JB2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YIBhQIIhs+gc8AAAAQSURBVAjXY2hgQIf/GbAAAKCTBYBUjWvCAAAAAElFTkSuQmCC) ;
+    background-size: 12px;
+    backrgound-repeat: no-repeat;
+}
+
+div.tree li.root {
+    background-color: #fff;
+    background-image: none;
+    backrgound-repeat: no-repeat;
+}
+
+.ccolor{color:Green}
+.dcolor{color:Orange}
+.hcolor{color:Red}
+.scolor{color:Black}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+				color-adjust: exact !important;                 /* Firefox */
+		}
+    div.tree ul {
+        background-size: 1px;
+    }
+}
+  </style>
+ </head>
+ <body>
+  <h1>
+   Opening  1NT
+  </h1>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     <table>
+      <tr>
+       <td class="node" rowspan="1">
+        1NT
+       </td>
+       <td>
+        15-17 balanced
+       </td>
+      </tr>
+     </table>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          Stayman
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="dcolor">
+           &diams;
+          </span>
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          Jackoby
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          Threeway
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          55M inv+
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+          1
+          <span class="scolor">
+           &spades;
+          </span>
+          54m
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+          1
+          <span class="hcolor">
+           &hearts;
+          </span>
+          54m
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3NT
+         </td>
+         <td>
+          To play
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          Deep texas
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          Deep texas
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          44m Quantitative
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4NT
+         </td>
+         <td>
+          Qunatitative
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   Stayman (1NT - 2
+   <span class="ccolor">
+    &clubs;
+   </span>
+   )
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-2
+     <span class="ccolor">
+      &clubs;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          No 4 card major
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            5
+            <span class="hcolor">
+             &hearts;
+            </span>
+            4
+            <span class="scolor">
+             &spades;
+            </span>
+            To play
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            5
+            <span class="scolor">
+             &spades;
+            </span>
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+            To play
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2NT
+           </td>
+           <td>
+            Inv
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            5
+            <span class="ccolor">
+             &clubs;
+            </span>
+            /
+            <span class="dcolor">
+             &diams;
+            </span>
+            4M GF
+           </td>
+          </tr>
+         </table>
+         <ul>
+          <li class="last node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              3
+              <span class="dcolor">
+               &diams;
+              </span>
+              <span class="hcolor">
+               &hearts;
+              </span>
+             </td>
+             <td>
+              Slam try
+             </td>
+            </tr>
+           </table>
+          </li>
+         </ul>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="hcolor">
+             &hearts;
+            </span>
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Smolen (4
+            <span class="hcolor">
+             &hearts;
+            </span>
+            5
+            <span class="scolor">
+             &spades;
+            </span>
+            /4
+            <span class="scolor">
+             &spades;
+            </span>
+            5
+            <span class="hcolor">
+             &hearts;
+            </span>
+            ) GF+
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Slam try no shortness
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2NT
+           </td>
+           <td>
+            8-9 4
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            5
+            <span class="ccolor">
+             &clubs;
+            </span>
+            /
+            <span class="dcolor">
+             &diams;
+            </span>
+            4
+            <span class="scolor">
+             &spades;
+            </span>
+            GF
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Inv
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Splinter
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3NT
+           </td>
+           <td>
+            To play
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            Splinter
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            Kvantitativ
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          4
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2NT
+           </td>
+           <td>
+            8-9 4
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            5
+            <span class="ccolor">
+             &clubs;
+            </span>
+            /
+            <span class="dcolor">
+             &diams;
+            </span>
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+            GF
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Slam try no shortness
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Inv
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Splinter
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3NT
+           </td>
+           <td>
+            To play
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            Quantitative
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   Jackoby transfer (1NT - 1
+   <span class="dcolor">
+    &diams;
+   </span>
+   <span class="hcolor">
+    &hearts;
+   </span>
+   )
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-2
+     <span class="dcolor">
+      &diams;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          Accept
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Slam try no shortness
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2NT
+           </td>
+           <td>
+            Inv
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            5
+            <span class="hcolor">
+             &hearts;
+            </span>
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+            /
+            <span class="dcolor">
+             &diams;
+            </span>
+            GF
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Inv 6
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Splinter
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            Splinter
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            To play
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            5
+            <span class="hcolor">
+             &hearts;
+            </span>
+            Quantitative
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+          dubleton
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+          MAX 4333
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+          dubleton
+          <span class="ccolor">
+           &clubs;
+          </span>
+          /
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+          MIN
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-2
+     <span class="hcolor">
+      &hearts;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          Accept
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2NT
+           </td>
+           <td>
+            Inv
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            5
+            <span class="scolor">
+             &spades;
+            </span>
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+            /
+            <span class="dcolor">
+             &diams;
+            </span>
+            GF
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Slam try no shortness
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Inv 6
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Splinter
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            To play
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            5
+            <span class="scolor">
+             &spades;
+            </span>
+            Quantitative
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          4
+          <span class="scolor">
+           &spades;
+          </span>
+          MAX 3433
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+          <span class="dcolor">
+           &diams;
+          </span>
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+          dubleton
+          <span class="ccolor">
+           &clubs;
+          </span>
+          /
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          4
+          <span class="scolor">
+           &spades;
+          </span>
+          MIN
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   1NT - 2
+   <span class="scolor">
+    &spades;
+   </span>
+   Three-way
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     <table>
+      <tr>
+       <td class="node" rowspan="4">
+        1NT-2
+        <span class="scolor">
+         &spades;
+        </span>
+       </td>
+       <td>
+        Three-way:
+       </td>
+      </tr>
+      <tr>
+       <td>
+        1. 8-9 Bal
+       </td>
+      </tr>
+      <tr>
+       <td>
+        2. 3
+        <span class="ccolor">
+         &clubs;
+        </span>
+        /
+        <span class="dcolor">
+         &diams;
+        </span>
+        Stop
+       </td>
+      </tr>
+      <tr>
+       <td>
+        3. 55m GF
+       </td>
+      </tr>
+     </table>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          MIN
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          MAX
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   2NT and 3
+   <span class="ccolor">
+    &clubs;
+   </span>
+   Transfers
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-2NT
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          Accepting transfer
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-3
+     <span class="ccolor">
+      &clubs;
+     </span>
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          Accepting transfer
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   1NT - 3
+   <span class="dcolor">
+    &diams;
+   </span>
+   Both majors
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-3
+     <span class="dcolor">
+      &diams;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          MIN
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          MIN
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3NT
+         </td>
+         <td>
+          To play 22M
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          <span class="hcolor">
+           &hearts;
+          </span>
+          MAX
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            Retranfer
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          <span class="scolor">
+           &spades;
+          </span>
+          MAX
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Retransfer
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          To play
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   Other
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          1
+          <span class="scolor">
+           &spades;
+          </span>
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+          54m GF
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+          1
+          <span class="hcolor">
+           &hearts;
+          </span>
+          54m GF
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          6
+          <span class="hcolor">
+           &hearts;
+          </span>
+          GF
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            MAX
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            MIN
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          6
+          <span class="scolor">
+           &spades;
+          </span>
+          GF
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            MAX
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            MIN
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          44m Qunatitative
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            5
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            To play
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            To play
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            5NT
+           </td>
+           <td>
+            Pick a slam
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            6
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            To play
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   Competition
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-(D)
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          Rdbl
+         </td>
+         <td>
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          Pass
+         </td>
+         <td>
+          For reduble
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-(2
+     <span class="ccolor">
+      &clubs;
+     </span>
+     )
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          To play
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          1
+          <span class="scolor">
+           &spades;
+          </span>
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+          54m GF
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+          1
+          <span class="hcolor">
+           &hearts;
+          </span>
+          54m GF
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          Transfer
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          Transfer
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          Transfer
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          Transfer
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-(2
+     <span class="dcolor">
+      &diams;
+     </span>
+     )
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          Dbl
+         </td>
+         <td>
+          6+ HCP
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2M
+         </td>
+         <td>
+          To play
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          Transfer
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          Transfer
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1NT-(3
+     <span class="ccolor">
+      &clubs;
+     </span>
+     )
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          F1
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     (1NT)
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          44+M
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="last node">
+         (P)
+         <ul>
+          <li class="node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              2
+              <span class="dcolor">
+               &diams;
+              </span>
+             </td>
+             <td>
+              Relay
+             </td>
+            </tr>
+           </table>
+           <ul>
+            <li class="node">
+             <table>
+              <tr>
+               <td class="node" rowspan="1">
+                2
+                <span class="hcolor">
+                 &hearts;
+                </span>
+               </td>
+               <td>
+                Equal
+               </td>
+              </tr>
+             </table>
+            </li>
+            <li class="node">
+             <table>
+              <tr>
+               <td class="node" rowspan="1">
+                2
+                <span class="scolor">
+                 &spades;
+                </span>
+               </td>
+               <td>
+                5
+                <span class="scolor">
+                 &spades;
+                </span>
+                4
+                <span class="hcolor">
+                 &hearts;
+                </span>
+               </td>
+              </tr>
+             </table>
+            </li>
+            <li class="last node">
+             <table>
+              <tr>
+               <td class="node" rowspan="1">
+                2NT
+               </td>
+               <td>
+                55M
+               </td>
+              </tr>
+             </table>
+            </li>
+           </ul>
+          </li>
+          <li class="node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              2M
+             </td>
+             <td>
+              To play
+             </td>
+            </tr>
+           </table>
+          </li>
+          <li class="last node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              2NT
+             </td>
+             <td>
+              GF
+             </td>
+            </tr>
+           </table>
+           <ul>
+            <li class="node">
+             <table>
+              <tr>
+               <td class="node" rowspan="1">
+                3
+                <span class="ccolor">
+                 &clubs;
+                </span>
+               </td>
+               <td>
+                Equal
+               </td>
+              </tr>
+             </table>
+             <ul>
+              <li class="last node">
+               <table>
+                <tr>
+                 <td class="node" rowspan="1">
+                  3
+                  <span class="dcolor">
+                   &diams;
+                  </span>
+                 </td>
+                 <td>
+                  Asks better major
+                 </td>
+                </tr>
+               </table>
+              </li>
+             </ul>
+            </li>
+            <li class="node">
+             <table>
+              <tr>
+               <td class="node" rowspan="1">
+                3M
+               </td>
+               <td>
+                To play
+               </td>
+              </tr>
+             </table>
+            </li>
+            <li class="node">
+             <table>
+              <tr>
+               <td class="node" rowspan="1">
+                3
+                <span class="dcolor">
+                 &diams;
+                </span>
+               </td>
+               <td>
+                44M
+               </td>
+              </tr>
+             </table>
+            </li>
+            <li class="node">
+             <table>
+              <tr>
+               <td class="node" rowspan="1">
+                3
+                <span class="hcolor">
+                 &hearts;
+                </span>
+               </td>
+               <td>
+                4
+                <span class="hcolor">
+                 &hearts;
+                </span>
+                5
+                <span class="scolor">
+                 &spades;
+                </span>
+               </td>
+              </tr>
+             </table>
+            </li>
+            <li class="node">
+             <table>
+              <tr>
+               <td class="node" rowspan="1">
+                3
+                <span class="scolor">
+                 &spades;
+                </span>
+               </td>
+               <td>
+                4
+                <span class="scolor">
+                 &spades;
+                </span>
+                5
+                <span class="hcolor">
+                 &hearts;
+                </span>
+               </td>
+              </tr>
+             </table>
+            </li>
+            <li class="last node">
+             <table>
+              <tr>
+               <td class="node" rowspan="1">
+                3NT
+               </td>
+               <td>
+                55M
+               </td>
+              </tr>
+             </table>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     (1NT)
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          6M
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2M
+           </td>
+           <td>
+            Pass correct
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h1>
+   2NT Opening
+  </h1>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     <table>
+      <tr>
+       <td class="node" rowspan="1">
+        2NT
+       </td>
+       <td>
+        20-21 Balanced
+       </td>
+      </tr>
+     </table>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          Stayman
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="dcolor">
+           &diams;
+          </span>
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          Jackoby
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          44m Slam try
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="ccolor">
+           &clubs;
+          </span>
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          Slam try 6+
+          <span class="hcolor">
+           &hearts;
+          </span>
+          /
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          Slam try 6+
+          <span class="ccolor">
+           &clubs;
+          </span>
+          /
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   Stayman 3
+   <span class="ccolor">
+    &clubs;
+   </span>
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     2NT-3
+     <span class="ccolor">
+      &clubs;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          No 4M
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+            5
+            <span class="scolor">
+             &spades;
+            </span>
+            GF
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            4
+            <span class="scolor">
+             &spades;
+            </span>
+            5
+            <span class="hcolor">
+             &hearts;
+            </span>
+            GF
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4m
+           </td>
+           <td>
+            Natural slam try
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            55M Stop
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            Quantitative
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Slam try
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4m
+           </td>
+           <td>
+            Natural slam try
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            Quantitative
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          4
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4m
+           </td>
+           <td>
+            Natural slam try
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Slam try
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            Quantitative
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   Jackoby Transfer 3
+   <span class="dcolor">
+    &diams;
+   </span>
+   <span class="hcolor">
+    &hearts;
+   </span>
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     2NT-3
+     <span class="dcolor">
+      &diams;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          3+
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Slam try no shortness
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3NT
+           </td>
+           <td>
+            Single other major
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            Single or void
+            <span class="ccolor">
+             &clubs;
+            </span>
+            /
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          5
+          <span class="scolor">
+           &spades;
+          </span>
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+           </td>
+           <td>
+            Natural GF
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            Retransfer
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            <span class="scolor">
+             &spades;
+            </span>
+            GF
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            <span class="dcolor">
+             &diams;
+            </span>
+            GF
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3NT
+         </td>
+         <td>
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+           </td>
+           <td>
+            Natural
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            Retransfer
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            <span class="dcolor">
+             &diams;
+            </span>
+            GF
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     2NT-3
+     <span class="hcolor">
+      &hearts;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          3+
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3NT
+           </td>
+           <td>
+            No shortness
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="ccolor">
+             &clubs;
+            </span>
+            <span class="dcolor">
+             &diams;
+            </span>
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Shortness
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            Quantitative
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3NT
+         </td>
+         <td>
+          2
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4m
+           </td>
+           <td>
+            Natural slam try
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            Retransfer
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            Quantitative
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h2>
+   Other
+  </h2>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     2NT
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          44+m Slam try
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3NT
+           </td>
+           <td>
+            Negative
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4m
+           </td>
+           <td>
+            4+m Positive
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     2NT
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="ccolor">
+           &clubs;
+          </span>
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          Slam try 6+
+          <span class="hcolor">
+           &hearts;
+          </span>
+          /
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="dcolor">
+             &diams;
+            </span>
+            <span class="hcolor">
+             &hearts;
+            </span>
+           </td>
+           <td>
+            MIN
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="hcolor">
+             &hearts;
+            </span>
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            MAX
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     2NT
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          6+
+          <span class="ccolor">
+           &clubs;
+          </span>
+          Slam try
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Blackwood
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            Stop
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          4
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          6+
+          <span class="dcolor">
+           &diams;
+          </span>
+          Slam try
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            4NT
+           </td>
+           <td>
+            Stop
+           </td>
+          </tr>
+         </table>
+        </li>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            5
+            <span class="ccolor">
+             &clubs;
+            </span>
+           </td>
+           <td>
+            Blackwood
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h1>
+   2
+   <span class="ccolor">
+    &clubs;
+   </span>
+   Strong opening
+  </h1>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     <table>
+      <tr>
+       <td class="node" rowspan="1">
+        2
+        <span class="ccolor">
+         &clubs;
+        </span>
+       </td>
+       <td>
+        22+ or 4 losers 19+
+       </td>
+      </tr>
+     </table>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          Waiting
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          KQTxx or AJTxx
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          55m
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          KQTxx or AJTxx
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     2
+     <span class="ccolor">
+      &clubs;
+     </span>
+     -2
+     <span class="dcolor">
+      &diams;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          Kokish(
+          <span class="hcolor">
+           &hearts;
+          </span>
+          or 24+ balanced)
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2
+            <span class="scolor">
+             &spades;
+            </span>
+           </td>
+           <td>
+            Forced
+           </td>
+          </tr>
+         </table>
+         <ul>
+          <li class="node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              2NT
+             </td>
+             <td>
+              24+ balanced
+             </td>
+            </tr>
+           </table>
+          </li>
+          <li class="node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              3
+              <span class="ccolor">
+               &clubs;
+              </span>
+              <span class="dcolor">
+               &diams;
+              </span>
+             </td>
+             <td>
+              5
+              <span class="hcolor">
+               &hearts;
+              </span>
+              4
+              <span class="ccolor">
+               &clubs;
+              </span>
+              /
+              <span class="dcolor">
+               &diams;
+              </span>
+              GF
+             </td>
+            </tr>
+           </table>
+          </li>
+          <li class="node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              3
+              <span class="hcolor">
+               &hearts;
+              </span>
+             </td>
+             <td>
+              6
+              <span class="hcolor">
+               &hearts;
+              </span>
+              GF
+             </td>
+            </tr>
+           </table>
+          </li>
+          <li class="last node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              3
+              <span class="scolor">
+               &spades;
+              </span>
+             </td>
+             <td>
+              5
+              <span class="hcolor">
+               &hearts;
+              </span>
+              4
+              <span class="scolor">
+               &spades;
+              </span>
+              GF
+             </td>
+            </tr>
+           </table>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          5+
+          <span class="scolor">
+           &spades;
+          </span>
+          GF
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          22-23 balanced (same development as 2NT)
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          Natural 6
+          <span class="ccolor">
+           &clubs;
+          </span>
+          /
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     2
+     <span class="ccolor">
+      &clubs;
+     </span>
+     -(2X)
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          Pass
+         </td>
+         <td>
+          Positive 4+ HCP
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          Dbl
+         </td>
+         <td>
+          Negative
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2X
+         </td>
+         <td>
+          5x
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h1>
+   Two-way checkback
+  </h1>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1m-1M-1NT
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          Inv+
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2
+            <span class="dcolor">
+             &diams;
+            </span>
+           </td>
+           <td>
+            Forced
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          GF+
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1m-1
+     <span class="hcolor">
+      &hearts;
+     </span>
+     -1NT
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          44M Inv+
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1m-1
+     <span class="hcolor">
+      &hearts;
+     </span>
+     -1NT-2
+     <span class="ccolor">
+      &clubs;
+     </span>
+     -2
+     <span class="dcolor">
+      &diams;
+     </span>
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          5
+          <span class="hcolor">
+           &hearts;
+          </span>
+          4
+          <span class="scolor">
+           &spades;
+          </span>
+          Inv
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1m-1M-1NT-2
+     <span class="dcolor">
+      &diams;
+     </span>
+     -2M
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2oM
+         </td>
+         <td>
+          44M GF
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1
+     <span class="ccolor">
+      &clubs;
+     </span>
+     -1
+     <span class="hcolor">
+      &hearts;
+     </span>
+     <span class="scolor">
+      &spades;
+     </span>
+     -1NT
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3X
+         </td>
+         <td>
+          5M 5X Inv
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1m-1
+     <span class="scolor">
+      &spades;
+     </span>
+     -1NT
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          Transfer
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            3
+            <span class="ccolor">
+             &clubs;
+            </span>
+           </td>
+           <td>
+            Forced
+           </td>
+          </tr>
+         </table>
+         <ul>
+          <li class="node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              3
+              <span class="dcolor">
+               &diams;
+              </span>
+             </td>
+             <td>
+              5
+              <span class="scolor">
+               &spades;
+              </span>
+              5
+              <span class="dcolor">
+               &diams;
+              </span>
+              GF
+             </td>
+            </tr>
+           </table>
+          </li>
+          <li class="node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              3
+              <span class="hcolor">
+               &hearts;
+              </span>
+             </td>
+             <td>
+              5
+              <span class="scolor">
+               &spades;
+              </span>
+              5
+              <span class="hcolor">
+               &hearts;
+              </span>
+              GF
+             </td>
+            </tr>
+           </table>
+          </li>
+          <li class="last node">
+           <table>
+            <tr>
+             <td class="node" rowspan="1">
+              3
+              <span class="scolor">
+               &spades;
+              </span>
+             </td>
+             <td>
+              5
+              <span class="scolor">
+               &spades;
+              </span>
+              5
+              <span class="ccolor">
+               &clubs;
+              </span>
+              GF
+             </td>
+            </tr>
+           </table>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h1>
+   Other
+  </h1>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1
+     <span class="ccolor">
+      &clubs;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2X
+         </td>
+         <td>
+          6x 8-10;
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          12+ GF (no 4M)
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3X
+         </td>
+         <td>
+          7x 3-5
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          7-10 Semibalanced
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1
+     <span class="ccolor">
+      &clubs;
+     </span>
+     -2
+     <span class="ccolor">
+      &clubs;
+     </span>
+     <ul>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="dcolor">
+           &diams;
+          </span>
+         </td>
+         <td>
+          12-14 Balanced
+         </td>
+        </tr>
+       </table>
+       <ul>
+        <li class="last node">
+         <table>
+          <tr>
+           <td class="node" rowspan="1">
+            2NT
+           </td>
+           <td>
+            Inv
+           </td>
+          </tr>
+         </table>
+        </li>
+       </ul>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          GF
+          <span class="hcolor">
+           &hearts;
+          </span>
+          /
+          <span class="scolor">
+           &spades;
+          </span>
+          values
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2NT
+         </td>
+         <td>
+          18-19 Balanced
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="ccolor">
+           &clubs;
+          </span>
+         </td>
+         <td>
+          Weak
+         </td>
+        </tr>
+       </table>
+      </li>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          3
+          <span class="dcolor">
+           &diams;
+          </span>
+          <span class="hcolor">
+           &hearts;
+          </span>
+          <span class="scolor">
+           &spades;
+          </span>
+         </td>
+         <td>
+          Splinter
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="tree">
+   <ul>
+    <li class="root">
+     1
+     <span class="dcolor">
+      &diams;
+     </span>
+     -2
+     <span class="dcolor">
+      &diams;
+     </span>
+     <ul>
+      <li class="last node">
+       <table>
+        <tr>
+         <td class="node" rowspan="1">
+          2
+          <span class="hcolor">
+           &hearts;
+          </span>
+         </td>
+         <td>
+          12-14 Balanced
+         </td>
+        </tr>
+       </table>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+ </body>
+</html>

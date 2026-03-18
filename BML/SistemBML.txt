@@ -1,5 +1,5 @@
 #+TITLE: Zeta System
-#+AUTHOR: Jan Fruhwirth
+#+AUTHOR: Jan Frühwirth
 
 
 #INCLUDE Modules\1NT.txt

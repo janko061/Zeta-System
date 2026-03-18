@@ -1,9 +1,13 @@
 @echo off
 
-bml2latex -o Sistem.tex .\BML\SistemBML.txt
+bml2latex -o ..\Sistem.tex ..\BML\SistemBML.txt
 
-latexmk -pdf -output-directory=Compilation Sistem.tex
+bml2html -o Sistem.html ..\BML\SistemBML.txt
 
-move .\Compilation\Sistem.pdf .
+REM latexmk -pdf -output-directory=Compilation Sistem.tex
+
+latexmk -pdf ..\Sistem.tex
+
+REM move .\Compilation\Sistem.pdf .
 
 echo Done!

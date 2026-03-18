@@ -1,3 +1,5 @@
+* Opening  1NT
+
 1N = 15-17 balanced
 		2C = Stayman
 		2DH = Jackoby
@@ -13,6 +15,7 @@
 		4S = 44m Quantitative
 		4N = Qunatitative
 
+** Stayman (1NT - 2!c)
 
 1N-2C;
 2D = No 4 card major
@@ -40,6 +43,8 @@
 		3N = To play
 		4N = Quantitative
 
+
+** Jackoby transfer (1NT - 1!d!h)
 
 1N-2D;
 2H = Accept
@@ -70,14 +75,17 @@
 3CDH = 4!h dubleton !c/!d
 3S = 4!s MIN
 
+** 1NT - 2!s Three-way
 
-1N-2S = Three way:
+1N-2S = Three-way:
         1. 8-9 Bal
         2. 3!c/!d Stop
         3. 55m GF
 		2N = MIN
 		3C = MAX
 
+
+** 2NT and 3!c Transfers
 
 1N-2N;
 3C = Accepting transfer
@@ -86,6 +94,7 @@
 1N-3C;
 3D = Accepting transfer
 
+** 1NT - 3!d Both majors
 
 1N-3D;
 3H = MIN
@@ -97,6 +106,8 @@
 		4H = Retransfer
 4HS = To play
 
+
+** Other
 
 1N
 		3H = 1!s 3!h 54m GF
@@ -118,6 +129,8 @@
 				5N = Pick a slam
 				6CD = To play
 
+
+** Competition
 
 1N-(D);
 R = !c
