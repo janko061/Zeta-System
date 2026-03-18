@@ -1,0 +1,64 @@
+* 1!h!s Openings
+
+1H = 5+!h
+        1S = 6+ 4+!s
+        1N = 6-11 without 3!h
+        2C = GF
+        2D = GF 5!d
+        2H = 6-9 3!h
+        2S = 6-9 6!s
+        2N = 4+!h Inv+
+        3C = Bergen 6-9 4+!h
+        3D = Bergen 10-11 3!h
+        3H = 0-5 4!h
+        3S = Splinter
+        4CD = Splinter
+        4H = To play
+
+1S = 5+!s
+        1N = 6-11 without 3!s
+        2C = GF
+        2D = GF 5!d
+        2H = GF 5!h
+        2S = 6-9 3!s
+        2N = 4+!s Inv+
+        3C = Bergen 6-9 4+!s
+        3D = Bergen 10-11 3!s
+        3H = 6-9 6+!h
+        3S = 0-5 4+!s
+        4CDH = Splinter
+        4S = To play
+
+** Bergen
+
+1M;
+3C = Bergen 6-9 4+M
+3D = Bergen 10-11 3M
+3M = 0-5 4+M
+
+** Sweedish
+
+1M;
+2N = 4+M Inv+
+        3C = Min 12-15
+                3D = GF Asks shortness
+                        3HS = 16+ Single !c/!d
+                        3N = 16+ Single oM
+                        4X = 16+ Void X 
+                        4M = No shortness 
+        3D = 16+ No shortness
+        3HS = 16+ Single !c/!d
+        3N = 16+ Single oM
+        4X = 16+ Void X
+
+** Gazzilli
+
+Also over 1H-1S:
+
+1M-1N;
+2C = Any 18+ or 6M
+        2D = 8+
+                2M = 12-15 6M
+2M = 12-15 5M 4!c 
+3X = 15-17 5M 4X
+
