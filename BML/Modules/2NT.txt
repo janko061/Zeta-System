@@ -25,7 +25,7 @@
 		4H = Slam try !s
 		4N = Quantitative
 
-** Jackoby Transfer 3!d!h
+** Jacoby Transfer 3!d!h
 
 2N-3D;
 3H = 3+!h

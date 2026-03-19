@@ -44,7 +44,7 @@
 		4N = Quantitative
 
 
-** Jackoby transfer (1NT - 1!d!h)
+** Jacoby transfer (1NT - 1!d!h)
 
 1N-2D;
 2H = Accept

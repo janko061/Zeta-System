@@ -42,9 +42,9 @@
 2N = 4+M Inv+
 		3C = Min 12-15
 				3D = GF Asks shortness
-						3HS = 16+ Single !c/!d
-						3N = 16+ Single oM
-						4X = 16+ Void X 
+						3HS = Single !c/!d
+						3N = Single oM
+						4X = Void X 
 						4M = No shortness 
 		3D = 16+ No shortness
 		3HS = 16+ Single !c/!d
