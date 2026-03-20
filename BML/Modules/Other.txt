@@ -1,24 +1,5 @@
 * Other
 
-1C;
-2X = 6x 8-10;
-2C = 12+ GF (no 4M)
-3X = 7x 3-5
-3C = 7-10 Semibalanced
-
-
-1C-2C;
-2D = 12-14 Balanced
-		2N = Inv
-2HS = GF !h/!s values
-2N = 18-19 Balanced
-3C = Weak
-3DHS = Splinter
-
-
-1D-2D;
-2H = 12-14 Balanced
-
 ** Roman Keycard Blackwood
 
 4N = RKCB
@@ -28,4 +9,20 @@
 		5S = 2 or 5 with Q
 		5N = Odd and a void
 		6X = Even and void X
+
+** Michaels
+
+(1m);
+2m = Both majors 5-5+
+
+(1M);
+2M = 5+oM and 5+!c/!d
+
+** Odd 2NT
+
+(1M);
+2N = Both majors
+
+(1m);
+2N = !h and om
 
