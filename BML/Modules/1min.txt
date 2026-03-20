@@ -4,18 +4,18 @@
 		1X = 4+X 6+
 		1N = 6-10
 		2C = Inverted minor 5+!c 12+ 
-		2X = 6+X 6-10 
+		2X = 6+X 6-9
 		2N = Inv Balanced
 		3C = Inverted minor 5+!c 6-11
 		3X = 7x 3-5
 		3N = To play
 
-1D = 2+!d
+1D = 4+!d
 		1X = 4+X 6+ HCP
 		1N = 6-10HCP 
 		2C = GF 2+!c
 		2D = Inverted minor 4+!d 12+ 
-		2X = 6+X 6-10
+		2X = 6+X 6-9
 		2N = Inv Balanced
 		3D = Inverted minor 4+!d 6+
 		3X = 7x 3-5

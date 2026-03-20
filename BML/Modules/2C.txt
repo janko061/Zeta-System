@@ -6,6 +6,7 @@
 		2N = 55m
 		3CD = KQTxx or AJTxx
 
+** 2!d Waiting and Kokish
 
 2C-2D;
 2H = Kokish(!h or 24+ balanced)

@@ -8,6 +8,8 @@
 
 #INCLUDE Modules\1M.txt
 
+#INCLUDE Modules\1min.txt
+
 #INCLUDE Modules\2C.txt
 
 #INCLUDE Modules\2-way.txt
