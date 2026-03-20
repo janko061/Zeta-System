@@ -18,3 +18,14 @@
 
 1D-2D;
 2H = 12-14 Balanced
+
+** Roman Keycard Blackwood
+
+4N = RKCB
+		5C = 1 or 4
+		5D = 3 or 0
+		5H = 2 or 5 without Q
+		5S = 2 or 5 with Q
+		5N = Odd and a void
+		6X = Even and void X
+
