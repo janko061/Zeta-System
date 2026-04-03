@@ -66,8 +66,8 @@ After overcall fit showing jumps.
 2N = 4+!s 12+ 
 		3C = Min 
 				3D = Re-Inv 
-					3S = Negative
-					4S = Positive
+						3S = Negative
+						4S = Positive
 3H = 4!s Inv
 
 ** Gazzilli
