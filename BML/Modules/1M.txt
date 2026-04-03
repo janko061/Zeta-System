@@ -6,7 +6,7 @@
 		2C = GF
 		2D = GF 5!d
 		2H = 6-9 3!h
-		2S = 6-9 6!s
+		2S = 6!s at least KQ+ (Premeptive)
 		2N = 4+!h Inv+
 		3C = Bergen 6-9 4+!h
 		3D = Bergen 10-11 3!h
@@ -24,17 +24,26 @@
 		2N = 4+!s Inv+
 		3C = Bergen 6-9 4+!s
 		3D = Bergen 10-11 3!s
-		3H = 6-9 6+!h
+		3H = Good !h - do not use
 		3S = 0-5 4+!s
 		4CDH = Splinter
 		4S = To play
 
 ** Bergen
 
+On after dubble. 
+
 1M;
 3C = Bergen 6-9 4+M
 3D = Bergen 10-11 3M
 3M = 0-5 4+M
+
+***Competition
+
+After overcall fit showing jumps.
+
+1H-(1S);
+3D = !d and !h fit
 
 ** Sweedish
 
@@ -51,14 +60,35 @@
 		3N = 16+ Single oM
 		4X = 16+ Void X
 
+***Competition 
+
+(1H)-1S-(P);
+2N = 4+!s 12+ 
+		3C = Min 
+				3D = Re-Inv 
+					3S = Negative
+					4S = Positive
+3H = 4!s Inv
+
 ** Gazzilli
 
 Also over 1H-1S:
 
 1M-1N;
-2C = Any 18+ or 6M
+2C = Any 16+ or 6M
 		2D = 8+
 				2M = 12-15 6M
+2N = Any other Inv
 2M = 12-15 5M 4!c 
-3X = 15-17 5M 4X
+3X = 15-17 5M 5X
 
+
+**Competition
+
+1M-(3oM);
+		4C = Slam try, fit showing
+
+1M-(3D);
+		4C = Slam try, fit showing
+
+Fit showing jumps after preamptive overcalls.

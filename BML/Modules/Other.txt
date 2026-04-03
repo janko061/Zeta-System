@@ -26,3 +26,8 @@
 (1m);
 2N = !h and om
 
+** Other 
+
+(1H)-1S-(2S);
+D = Honor !h
+
