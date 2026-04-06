@@ -82,7 +82,9 @@
         2. 3!c/!d Stop
         3. 55m GF
 		2N = MIN
+				2HS = 55m GF !h/!s short
 		3C = MAX
+				2HS = 55m GF !h/!s short
 
 
 ** 2NT and 3!c Transfers

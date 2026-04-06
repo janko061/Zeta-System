@@ -51,10 +51,10 @@ After overcall fit showing jumps.
 2N = 4+M Inv+
 		3C = Min 12-15
 				3D = GF Asks shortness
-						3HS = Single !c/!d
-						3N = Single oM
-						4X = Void X 
-						4M = No shortness 
+						3HS = Short !c/!d
+						3N = Short oM
+						4X = Control X 
+						4M = No shortness, weak
 		3D = 16+ No shortness
 		3HS = 16+ Single !c/!d
 		3N = 16+ Single oM
