@@ -24,4 +24,6 @@ jobs:
         run: pip install bridge-markup --upgrade
 
       - name: Compile BML file
-        run: bml2latex -o Sistem.tex BML/SistemBML.txt
+        run: |
+          bml2latex --no-tree -o Sistem.tex BML/SistemBML.txt
+          python tools/bml_format.py Sistem.tex Sistem.tex
